@@ -1,0 +1,35 @@
+name: novapay
+
+services:
+
+  postgres-accounts:
+    image: postgres:16.4-alpine
+    container_name: novapay-postgres-accounts
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: novapay_accounts
+      POSTGRES_USER: novapay
+      POSTGRES_PASSWORD: novapay
+      TZ: UTC
+      PGTZ: UTC
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres-accounts-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U novapay -d novapay_accounts"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+    networks:
+      - novapay-net
+
+volumes:
+  postgres-accounts-data:
+    name: novapay-postgres-accounts-data
+
+networks:
+  novapay-net:
+    name: novapay-net
+    driver: bridge
