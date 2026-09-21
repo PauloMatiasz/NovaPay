@@ -1,4 +1,6 @@
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/test/java/com/novapay/accounts/AccountsServiceApplicationTests.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/test/java/com/novapay/accounts/TestAccountsServiceApplication.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/test/java/com/novapay/accounts/TestcontainersConfiguration.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/test/java/com/novapay/accounts/domain/model/vo/AccountNumberTest.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/test/java/com/novapay/accounts/domain/model/vo/CpfTest.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/test/java/com/novapay/accounts/domain/model/vo/MoneyTest.java
