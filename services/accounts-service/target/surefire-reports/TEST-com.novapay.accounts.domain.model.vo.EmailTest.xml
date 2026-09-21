@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.novapay.accounts.domain.model.vo.AccountNumberTest" time="0.008" tests="10" errors="0" skipped="0" failures="0" flakes="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.novapay.accounts.domain.model.vo.EmailTest" time="0.071" tests="16" errors="0" skipped="0" failures="0" flakes="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -67,14 +67,20 @@
     <property name="java.class.version" value="69.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[accounts-service] "/>
   </properties>
-  <testcase name="deveFormatarComHifen" classname="AccountNumber" time="0.001"/>
-  <testcase name="deveAceitarValorCompletoComHifen" classname="AccountNumber" time="0.0"/>
-  <testcase name="deveRejeitarNulo" classname="AccountNumber" time="0.001"/>
-  <testcase name="deveRejeitarFormatoInvalido(String)[1]" classname="AccountNumber" time="0.001"/>
-  <testcase name="deveRejeitarFormatoInvalido(String)[2]" classname="AccountNumber" time="0.0"/>
-  <testcase name="deveRejeitarFormatoInvalido(String)[3]" classname="AccountNumber" time="0.0"/>
-  <testcase name="deveRejeitarFormatoInvalido(String)[4]" classname="AccountNumber" time="0.001"/>
-  <testcase name="deveRejeitarFormatoInvalido(String)[5]" classname="AccountNumber" time="0.0"/>
-  <testcase name="deveExporAgenciaENumeroSeparadamente" classname="AccountNumber" time="0.001"/>
-  <testcase name="deveCriarAPartirDeAgenciaENumero" classname="AccountNumber" time="0.0"/>
+  <testcase name="deveNormalizarParaMinusculo" classname="Email" time="0.042"/>
+  <testcase name="deveRemoverEspacosNasPontas" classname="Email" time="0.001"/>
+  <testcase name="toStringNaoDeveExporEmailCompleto" classname="Email" time="0.001"/>
+  <testcase name="deveRejeitarNulo" classname="Email" time="0.002"/>
+  <testcase name="deveExporODominio" classname="Email" time="0.0"/>
+  <testcase name="deveRejeitarFormatoInvalido(String)[1]" classname="Email" time="0.002"/>
+  <testcase name="deveRejeitarFormatoInvalido(String)[2]" classname="Email" time="0.0"/>
+  <testcase name="deveRejeitarFormatoInvalido(String)[3]" classname="Email" time="0.0"/>
+  <testcase name="deveRejeitarFormatoInvalido(String)[4]" classname="Email" time="0.001"/>
+  <testcase name="deveRejeitarFormatoInvalido(String)[5]" classname="Email" time="0.0"/>
+  <testcase name="deveRejeitarFormatoInvalido(String)[6]" classname="Email" time="0.0"/>
+  <testcase name="deveRejeitarFormatoInvalido(String)[7]" classname="Email" time="0.0"/>
+  <testcase name="deveRejeitarFormatoInvalido(String)[8]" classname="Email" time="0.001"/>
+  <testcase name="deveMascararPreservandoPrimeiraLetraEDominio" classname="Email" time="0.0"/>
+  <testcase name="deveAceitarEmailValido" classname="Email" time="0.001"/>
+  <testcase name="deveTratarMaiusculoEMinusculoComoIguais" classname="Email" time="0.0"/>
 </testsuite>

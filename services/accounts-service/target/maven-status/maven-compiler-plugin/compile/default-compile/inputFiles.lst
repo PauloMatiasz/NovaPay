@@ -1,4 +1,5 @@
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/AccountsServiceApplication.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/model/vo/AccountNumber.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/model/vo/Cpf.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/model/vo/Email.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/model/vo/Money.java
