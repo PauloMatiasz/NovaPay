@@ -1,5 +1,13 @@
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/AccountsServiceApplication.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/application/port/in/RegisterCustomerCommand.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/application/port/in/RegisterCustomerResult.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/application/port/in/RegisterCustomerUseCase.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/application/port/out/AccountNumberGeneratorPort.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/application/port/out/AccountRepositoryPort.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/application/port/out/CustomerRepositoryPort.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/application/port/out/PasswordHasherPort.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/exception/AccountNotActiveException.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/exception/CustomerAlreadyExistsException.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/exception/DailyLimitExceededException.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/exception/DomainException.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/exception/InsufficientBalanceException.java
