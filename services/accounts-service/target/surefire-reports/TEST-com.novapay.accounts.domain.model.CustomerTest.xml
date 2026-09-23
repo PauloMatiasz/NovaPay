@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.novapay.accounts.domain.model.vo.CpfTest" time="0.034" tests="29" errors="0" skipped="0" failures="0" flakes="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.novapay.accounts.domain.model.CustomerTest" time="0.029" tests="18" errors="0" skipped="0" failures="0" flakes="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -67,33 +67,22 @@
     <property name="java.class.version" value="69.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[accounts-service] "/>
   </properties>
-  <testcase name="deveRejeitarDigitosRepetidos(String)[1]" classname="Rejeicao" time="0.001"/>
-  <testcase name="deveRejeitarDigitosRepetidos(String)[2]" classname="Rejeicao" time="0.001"/>
-  <testcase name="deveRejeitarDigitosRepetidos(String)[3]" classname="Rejeicao" time="0.001"/>
-  <testcase name="deveRejeitarDigitosRepetidos(String)[4]" classname="Rejeicao" time="0.0"/>
-  <testcase name="deveRejeitarDigitosRepetidos(String)[5]" classname="Rejeicao" time="0.0"/>
-  <testcase name="deveRejeitarDigitosRepetidos(String)[6]" classname="Rejeicao" time="0.001"/>
-  <testcase name="deveRejeitarDigitosRepetidos(String)[7]" classname="Rejeicao" time="0.001"/>
-  <testcase name="deveRejeitarDigitosRepetidos(String)[8]" classname="Rejeicao" time="0.0"/>
-  <testcase name="deveRejeitarDigitosRepetidos(String)[9]" classname="Rejeicao" time="0.0"/>
-  <testcase name="deveRejeitarDigitosRepetidos(String)[10]" classname="Rejeicao" time="0.001"/>
-  <testcase name="deveRejeitarNulo" classname="Rejeicao" time="0.001"/>
-  <testcase name="deveRejeitarDigitoVerificadorIncorreto(String)[1]" classname="Rejeicao" time="0.001"/>
-  <testcase name="deveRejeitarDigitoVerificadorIncorreto(String)[2]" classname="Rejeicao" time="0.001"/>
-  <testcase name="deveRejeitarDigitoVerificadorIncorreto(String)[3]" classname="Rejeicao" time="0.001"/>
-  <testcase name="deveRejeitarQuantidadeIncorretaDeDigitos(String)[1]" classname="Rejeicao" time="0.001"/>
-  <testcase name="deveRejeitarQuantidadeIncorretaDeDigitos(String)[2]" classname="Rejeicao" time="0.0"/>
-  <testcase name="deveRejeitarQuantidadeIncorretaDeDigitos(String)[3]" classname="Rejeicao" time="0.0"/>
-  <testcase name="deveRejeitarQuantidadeIncorretaDeDigitos(String)[4]" classname="Rejeicao" time="0.0"/>
-  <testcase name="deveRejeitarQuantidadeIncorretaDeDigitos(String)[5]" classname="Rejeicao" time="0.001"/>
-  <testcase name="deveFormatarComPontuacao" classname="Apresentacao" time="0.002"/>
-  <testcase name="deveMascararOcultandoInicioEFim" classname="Apresentacao" time="0.0"/>
-  <testcase name="toStringNaoDeveExporCpfCompleto" classname="Apresentacao" time="0.001"/>
-  <testcase name="deveAceitarCpfValidoSemFormatacao" classname="Criacao" time="0.0"/>
-  <testcase name="deveRemoverEspacos" classname="Criacao" time="0.001"/>
-  <testcase name="deveAceitarCpfValidoComPontuacao" classname="Criacao" time="0.001"/>
-  <testcase name="deveTratarFormatadoENaoFormatadoComoIguais" classname="Criacao" time="0.001"/>
-  <testcase name="deveAceitarCpfsValidosConhecidos(String)[1]" classname="Algoritmo" time="0.0"/>
-  <testcase name="deveAceitarCpfsValidosConhecidos(String)[2]" classname="Algoritmo" time="0.001"/>
-  <testcase name="deveAceitarCpfsValidosConhecidos(String)[3]" classname="Algoritmo" time="0.003"/>
+  <testcase name="clientesComMesmoIdSaoIguais" classname="Identidade" time="0.002"/>
+  <testcase name="toStringNaoDeveExporDadosPessoais" classname="Identidade" time="0.0"/>
+  <testcase name="deveRejeitarCpfNulo" classname="Cadastro" time="0.001"/>
+  <testcase name="deveRejeitarNomeCurto(String)[1]" classname="Cadastro" time="0.001"/>
+  <testcase name="deveRejeitarNomeCurto(String)[2]" classname="Cadastro" time="0.001"/>
+  <testcase name="deveRejeitarNomeCurto(String)[3]" classname="Cadastro" time="0.001"/>
+  <testcase name="deveRejeitarNomeCurto(String)[4]" classname="Cadastro" time="0.001"/>
+  <testcase name="deveRejeitarNomeLongo" classname="Cadastro" time="0.001"/>
+  <testcase name="deveRemoverEspacosDoNome" classname="Cadastro" time="0.0"/>
+  <testcase name="deveRejeitarHashEmBranco" classname="Cadastro" time="0.001"/>
+  <testcase name="deveRejeitarNomeNulo" classname="Cadastro" time="0.0"/>
+  <testcase name="deveCadastrarClienteAtivo" classname="Cadastro" time="0.002"/>
+  <testcase name="deveDesativarEReativar" classname="Status" time="0.0"/>
+  <testcase name="deveRenomear" classname="Alteracoes" time="0.001"/>
+  <testcase name="deveTrocarHash" classname="Alteracoes" time="0.002"/>
+  <testcase name="deveTrocarEmail" classname="Alteracoes" time="0.001"/>
+  <testcase name="deveRejeitarEmailNulo" classname="Alteracoes" time="0.001"/>
+  <testcase name="naoDeveAlterarNomeQuandoRenameFalha" classname="Alteracoes" time="0.001"/>
 </testsuite>
