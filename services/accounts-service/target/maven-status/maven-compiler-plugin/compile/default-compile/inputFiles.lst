@@ -20,3 +20,5 @@
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/model/vo/Cpf.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/model/vo/Email.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/model/vo/Money.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/infrastructure/out/persistence/AccountJpaEntity.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/infrastructure/out/persistence/CustomerJpaEntity.java
