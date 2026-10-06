@@ -21,4 +21,11 @@
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/model/vo/Email.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/model/vo/Money.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/infrastructure/out/persistence/AccountJpaEntity.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/infrastructure/out/persistence/AccountJpaRepository.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/infrastructure/out/persistence/AccountNumberGeneratorAdapter.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/infrastructure/out/persistence/AccountPersistenceMapper.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/infrastructure/out/persistence/AccountRepositoryAdapter.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/infrastructure/out/persistence/CustomerJpaEntity.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/infrastructure/out/persistence/CustomerJpaRepository.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/infrastructure/out/persistence/CustomerPersistenceMapper.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/infrastructure/out/persistence/CustomerRepositoryAdapter.java
