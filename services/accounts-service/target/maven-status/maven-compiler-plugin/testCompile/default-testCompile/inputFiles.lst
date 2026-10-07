@@ -10,3 +10,4 @@
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/test/java/com/novapay/accounts/domain/model/vo/CpfTest.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/test/java/com/novapay/accounts/domain/model/vo/EmailTest.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/test/java/com/novapay/accounts/domain/model/vo/MoneyTest.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/test/java/com/novapay/accounts/infrastructure/out/security/BCryptPasswordHasherAdapterTest.java

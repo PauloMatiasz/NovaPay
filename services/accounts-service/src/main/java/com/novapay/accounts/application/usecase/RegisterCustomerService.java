@@ -14,6 +14,8 @@ import com.novapay.accounts.domain.model.vo.AccountNumber;
 import com.novapay.accounts.domain.model.vo.Cpf;
 import com.novapay.accounts.domain.model.vo.Email;
 
+import jakarta.transaction.Transactional;
+
 public class RegisterCustomerService implements RegisterCustomerUseCase {
 
     private static final int MIN_PASSWORD_LENGTH = 8;
@@ -33,7 +35,9 @@ public class RegisterCustomerService implements RegisterCustomerUseCase {
         this.accountNumberGenerator = accountNumberGenerator;
     }
 
+
     @Override
+    @Transactional
     public RegisterCustomerResult execute(RegisterCustomerCommand command) {
         validatePassword(command.password());
 
