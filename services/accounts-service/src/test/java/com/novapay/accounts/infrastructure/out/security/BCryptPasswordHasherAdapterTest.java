@@ -2,6 +2,7 @@ package com.novapay.accounts.infrastructure.out.security;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import com.novapay.accounts.adapter.out.common.BCryptPasswordHasherAdapter;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

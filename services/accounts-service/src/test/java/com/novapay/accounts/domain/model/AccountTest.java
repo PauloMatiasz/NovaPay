@@ -1,9 +1,11 @@
 package com.novapay.accounts.domain.model;
 
-import com.novapay.accounts.domain.exception.AccountNotActiveException;
-import com.novapay.accounts.domain.exception.InsufficientBalanceException;
-import com.novapay.accounts.domain.model.vo.AccountNumber;
-import com.novapay.accounts.domain.model.vo.Money;
+import com.novapay.accounts.core.model.account.Account;
+import com.novapay.accounts.core.model.account.AccountStatus;
+import com.novapay.accounts.core.exception.AccountNotActiveException;
+import com.novapay.accounts.core.exception.InsufficientBalanceException;
+import com.novapay.accounts.core.model.account.AccountNumber;
+import com.novapay.accounts.core.model.account.Money;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;

@@ -1,5 +1,6 @@
 package com.novapay.accounts.domain.model.vo;
 
+import com.novapay.accounts.core.model.account.AccountNumber;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
