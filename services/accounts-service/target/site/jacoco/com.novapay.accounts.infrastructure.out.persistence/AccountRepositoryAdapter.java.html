@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AccountRepositoryAdapter.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">accounts-service</a> &gt; <a href="index.source.html" class="el_package">com.novapay.accounts.infrastructure.out.persistence</a> &gt; <span class="el_source">AccountRepositoryAdapter.java</span></div><h1>AccountRepositoryAdapter.java</h1><pre class="source lang-java linenums">package com.novapay.accounts.infrastructure.out.persistence;
+
+import com.novapay.accounts.application.port.out.AccountRepositoryPort;
+import com.novapay.accounts.domain.model.Account;
+import org.springframework.stereotype.Component;
+
+@Component
+public class AccountRepositoryAdapter implements AccountRepositoryPort {
+
+    private final AccountJpaRepository jpaRepository;
+
+<span class="fc" id="L12">    public AccountRepositoryAdapter(AccountJpaRepository jpaRepository) {</span>
+<span class="fc" id="L13">        this.jpaRepository = jpaRepository;</span>
+<span class="fc" id="L14">    }</span>
+
+    @Override
+    public Account save(Account account) {
+<span class="nc" id="L18">        AccountJpaEntity entity = AccountPersistenceMapper.toEntity(account);</span>
+<span class="nc" id="L19">        AccountJpaEntity saved = jpaRepository.save(entity);</span>
+<span class="nc" id="L20">        return AccountPersistenceMapper.toDomain(saved);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
