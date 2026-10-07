@@ -7,6 +7,7 @@
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/application/port/out/CustomerRepositoryPort.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/application/port/out/PasswordHasherPort.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/application/usecase/RegisterCustomerService.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/config/UseCaseConfig.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/exception/AccountNotActiveException.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/exception/CustomerAlreadyExistsException.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/domain/exception/DailyLimitExceededException.java
@@ -29,3 +30,4 @@
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/infrastructure/out/persistence/CustomerJpaRepository.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/infrastructure/out/persistence/CustomerPersistenceMapper.java
 /Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/infrastructure/out/persistence/CustomerRepositoryAdapter.java
+/Users/matiasz/Desktop/NovaPay/services/accounts-service/src/main/java/com/novapay/accounts/infrastructure/out/security/BCryptPasswordHasherAdapter.java

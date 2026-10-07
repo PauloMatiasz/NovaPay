@@ -1,6 +1,7 @@
 com/novapay/accounts/application/port/out/AccountRepositoryPort.class
 com/novapay/accounts/infrastructure/out/persistence/AccountPersistenceMapper.class
 com/novapay/accounts/domain/model/Customer.class
+com/novapay/accounts/config/UseCaseConfig.class
 com/novapay/accounts/infrastructure/out/persistence/CustomerJpaRepository.class
 com/novapay/accounts/domain/exception/CustomerAlreadyExistsException.class
 com/novapay/accounts/infrastructure/out/persistence/AccountRepositoryAdapter.class
@@ -11,6 +12,7 @@ com/novapay/accounts/application/port/out/AccountNumberGeneratorPort.class
 com/novapay/accounts/infrastructure/out/persistence/AccountNumberGeneratorAdapter.class
 com/novapay/accounts/domain/exception/DailyLimitExceededException.class
 com/novapay/accounts/application/port/in/RegisterCustomerUseCase.class
+com/novapay/accounts/infrastructure/out/security/BCryptPasswordHasherAdapter.class
 com/novapay/accounts/domain/exception/AccountNotActiveException.class
 com/novapay/accounts/application/port/out/CustomerRepositoryPort.class
 com/novapay/accounts/application/port/in/RegisterCustomerResult.class

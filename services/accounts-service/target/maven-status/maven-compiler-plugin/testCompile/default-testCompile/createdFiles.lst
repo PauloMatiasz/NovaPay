@@ -19,6 +19,7 @@ com/novapay/accounts/domain/model/vo/MoneyTest$Comparacao.class
 com/novapay/accounts/domain/model/vo/AccountNumberTest.class
 com/novapay/accounts/domain/model/AccountTest$Debito.class
 com/novapay/accounts/domain/model/AccountTest$Identidade.class
+com/novapay/accounts/infrastructure/out/security/BCryptPasswordHasherAdapterTest.class
 com/novapay/accounts/domain/model/vo/CpfTest$Criacao.class
 com/novapay/accounts/TestAccountsServiceApplication.class
 com/novapay/accounts/domain/model/vo/CpfTest$Algoritmo.class
