@@ -1,7 +1,9 @@
 package com.novapay.accounts.domain.model;
 
-import com.novapay.accounts.domain.model.vo.Cpf;
-import com.novapay.accounts.domain.model.vo.Email;
+import com.novapay.accounts.core.model.customer.Customer;
+import com.novapay.accounts.core.model.customer.CustomerStatus;
+import com.novapay.accounts.core.model.customer.Cpf;
+import com.novapay.accounts.core.model.customer.Email;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;

@@ -2,6 +2,7 @@ package com.novapay.accounts.domain.model;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import com.novapay.accounts.core.model.account.AccountStatus;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 

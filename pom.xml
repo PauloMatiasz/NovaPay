@@ -4,7 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-
+    <modules>
+        <module>services/accounts-service</module>
+    </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -19,10 +21,6 @@
 
     <name>NovaPay Platform</name>
     <description>Plataforma de pagamentos instantaneos</description>
-
-    <modules>
-        <module>services/accounts-service</module>
-    </modules>
 
     <properties>
         <mapstruct.version>1.6.3</mapstruct.version>
