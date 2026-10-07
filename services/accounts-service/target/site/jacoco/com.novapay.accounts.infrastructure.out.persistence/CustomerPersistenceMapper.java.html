@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CustomerPersistenceMapper.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">accounts-service</a> &gt; <a href="index.source.html" class="el_package">com.novapay.accounts.infrastructure.out.persistence</a> &gt; <span class="el_source">CustomerPersistenceMapper.java</span></div><h1>CustomerPersistenceMapper.java</h1><pre class="source lang-java linenums">package com.novapay.accounts.infrastructure.out.persistence;
+
+import com.novapay.accounts.domain.model.Customer;
+import com.novapay.accounts.domain.model.vo.Cpf;
+import com.novapay.accounts.domain.model.vo.Email;
+
+final class CustomerPersistenceMapper {
+
+    private CustomerPersistenceMapper() {
+    }
+
+    static CustomerJpaEntity toEntity(Customer customer) {
+<span class="nc" id="L13">        CustomerJpaEntity entity = new CustomerJpaEntity();</span>
+<span class="nc" id="L14">        entity.setId(customer.id());</span>
+<span class="nc" id="L15">        entity.setFullName(customer.fullName());</span>
+<span class="nc" id="L16">        entity.setCpf(customer.cpf().value());</span>
+<span class="nc" id="L17">        entity.setEmail(customer.email().value());</span>
+<span class="nc" id="L18">        entity.setPasswordHash(customer.passwordHash());</span>
+<span class="nc" id="L19">        entity.setStatus(customer.status());</span>
+<span class="nc" id="L20">        entity.setCreatedAt(customer.createdAt());</span>
+<span class="nc" id="L21">        return entity;</span>
+    }
+
+    static Customer toDomain(CustomerJpaEntity entity) {
+<span class="nc" id="L25">        return Customer.restore(</span>
+<span class="nc" id="L26">                entity.getId(),</span>
+<span class="nc" id="L27">                entity.getFullName(),</span>
+<span class="nc" id="L28">                Cpf.of(entity.getCpf()),</span>
+<span class="nc" id="L29">                Email.of(entity.getEmail()),</span>
+<span class="nc" id="L30">                entity.getPasswordHash(),</span>
+<span class="nc" id="L31">                entity.getStatus(),</span>
+<span class="nc" id="L32">                entity.getCreatedAt());</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
