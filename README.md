@@ -45,7 +45,7 @@
 
 ## 1. Por que este projeto
 
-A vaga-alvo é de **Analista Desenvolvedor Full Stack Sênior (Java | Cloud | Angular)** para um cliente do setor **bancário**. Um projeto de portfólio só convence um recrutador técnico quando ele resolve um problema **do mesmo domínio e com a mesma complexidade** que ele resolve no dia a dia.
+Adquirir conhecimento no nível de um  **Analista Desenvolvedor Full Stack Sênior (Java | Cloud | Angular)** para um cliente do setor **bancário**. Um projeto de portfólio só convence um recrutador técnico quando ele resolve um problema **do mesmo domínio e com a mesma complexidade** que ele resolve no dia a dia.
 
 Por isso o NovaPay não é um CRUD. Ele ataca os três problemas que realmente aparecem em entrevista sênior de banco:
 
@@ -54,11 +54,6 @@ Por isso o NovaPay não é um CRUD. Ele ataca os três problemas que realmente a
 | "Como você garante que o dinheiro não some nem duplica entre microsserviços?" | Saga orquestrada + Transactional Outbox + idempotência |
 | "Como você lida com um serviço fora do ar no meio de uma transferência?" | Compensação (estorno), retry com backoff, DLQ, circuit breaker |
 | "Como você consulta 5 anos de extrato sem derrubar o banco transacional?" | CQRS: escrita no PostgreSQL, leitura projetada no MongoDB |
-
-**A frase que você vai poder dizer numa entrevista:**
-> "Implementei uma saga orquestrada com padrão outbox para garantir consistência eventual entre três microsserviços, com idempotência por chave de negócio, compensação automática e DLQ — tudo validado por testes de integração com Testcontainers e um E2E em Playwright."
-
-Isso é discurso de sênior. E é verdade, porque você vai ter construído.
 
 ---
 
