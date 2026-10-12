@@ -1,5 +1,6 @@
 package com.novapay.accounts.adapter.in.controller;
 
+import com.novapay.accounts.adapter.in.api.CustomerApi;
 import com.novapay.accounts.adapter.in.api.RegisterCustomerRequest;
 import com.novapay.accounts.adapter.in.api.RegisterCustomerResponse;
 import com.novapay.accounts.core.port.RegisterCustomerResult;
@@ -14,8 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.net.URI;
 
 @RestController
-@RequestMapping("/api/v1/customers")
-public class CustomerController {
+public class CustomerController implements CustomerApi {
 
     private final RegisterCustomerUseCase registerCustomerUseCase;
     private final CustomerRestMapper mapper;
@@ -26,7 +26,7 @@ public class CustomerController {
         this.mapper = mapper;
     }
 
-    @PostMapping
+    @Override
     public ResponseEntity<RegisterCustomerResponse> register(
             @Valid @RequestBody RegisterCustomerRequest request) {
 
