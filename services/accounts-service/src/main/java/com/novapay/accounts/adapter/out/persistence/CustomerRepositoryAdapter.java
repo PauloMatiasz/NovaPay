@@ -5,6 +5,7 @@ import com.novapay.accounts.core.model.customer.Customer;
 import com.novapay.accounts.core.model.customer.Cpf;
 import com.novapay.accounts.core.model.customer.Email;
 import org.springframework.stereotype.Component;
+import java.util.Optional;
 
 @Component
 public class CustomerRepositoryAdapter implements CustomerRepositoryPort {
@@ -29,5 +30,11 @@ public class CustomerRepositoryAdapter implements CustomerRepositoryPort {
     @Override
     public boolean existsByEmail(Email email) {
         return jpaRepository.existsByEmail(email.value());
+    }
+
+    @Override
+    public Optional<Customer> findByEmail(Email email) {
+        return jpaRepository.findByEmail(email.value())
+                .map(CustomerPersistenceMapper::toDomain);
     }
 }
