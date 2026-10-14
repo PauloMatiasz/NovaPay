@@ -1,6 +1,7 @@
 package com.novapay.accounts.adapter.in.controller;
 
 import com.novapay.accounts.adapter.in.api.ErrorResponse;
+import com.novapay.accounts.core.exception.AccountNotFoundException;
 import com.novapay.accounts.core.exception.CustomerAlreadyExistsException;
 import com.novapay.accounts.core.exception.DomainException;
 import com.novapay.accounts.core.exception.InvalidCredentialsException;
@@ -27,9 +28,15 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ErrorResponse> handleNoResourceFound(NoResourceFoundException ex) {
         return build(HttpStatus.NOT_FOUND, "Recurso não encontrado");
     }
+
     @ExceptionHandler(InvalidCredentialsException.class)
     public ResponseEntity<ErrorResponse> handleInvalidCredentials(InvalidCredentialsException ex) {
         return build(HttpStatus.UNAUTHORIZED, ex.getMessage());
+    }
+
+    @ExceptionHandler(AccountNotFoundException.class)
+    public ResponseEntity<ErrorResponse> handleAccountNotFound(AccountNotFoundException ex) {
+        return build(HttpStatus.NOT_FOUND, ex.getMessage());
     }
 
     @ExceptionHandler(DomainException.class)

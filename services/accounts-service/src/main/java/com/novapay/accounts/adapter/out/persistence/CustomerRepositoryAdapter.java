@@ -6,6 +6,7 @@ import com.novapay.accounts.core.model.customer.Cpf;
 import com.novapay.accounts.core.model.customer.Email;
 import org.springframework.stereotype.Component;
 import java.util.Optional;
+import java.util.UUID;
 
 @Component
 public class CustomerRepositoryAdapter implements CustomerRepositoryPort {
@@ -33,8 +34,15 @@ public class CustomerRepositoryAdapter implements CustomerRepositoryPort {
     }
 
     @Override
+    public Optional<Customer> findById(UUID customerId) {
+        return jpaRepository.findById(customerId)
+                .map(CustomerPersistenceMapper::toDomain);
+    }
+
+    @Override
     public Optional<Customer> findByEmail(Email email) {
         return jpaRepository.findByEmail(email.value())
                 .map(CustomerPersistenceMapper::toDomain);
     }
+
 }

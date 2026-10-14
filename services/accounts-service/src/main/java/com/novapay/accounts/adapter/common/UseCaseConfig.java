@@ -1,6 +1,7 @@
 package com.novapay.accounts.adapter.common;
 
 import com.novapay.accounts.core.port.*;
+import com.novapay.accounts.core.usecase.account.GetMyAccountService;
 import com.novapay.accounts.core.usecase.auth.LoginService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,5 +26,11 @@ public class UseCaseConfig {
                                    PasswordHasherPort passwordHasher,
                                    TokenGeneratorPort tokenGenerator) {
     return new LoginService(customerRepository, passwordHasher, tokenGenerator);
+  }
+
+  @Bean
+  public GetMyAccountUseCase getMyAccountUseCase(CustomerRepositoryPort customerRepository, AccountRepositoryPort accountRepository) {
+
+    return new GetMyAccountService(customerRepository, accountRepository);
   }
 }

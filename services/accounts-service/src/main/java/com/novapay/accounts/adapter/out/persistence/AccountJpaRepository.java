@@ -1,5 +1,6 @@
 package com.novapay.accounts.adapter.out.persistence;
 
+import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -9,4 +10,7 @@ public interface AccountJpaRepository extends JpaRepository<AccountJpaEntity, UU
 
   @Query(value = "SELECT nextval('account_number_seq')", nativeQuery = true)
   Long nextAccountNumber();
+
+  Optional<AccountJpaEntity> findByCustomerId(UUID customerId);
+
 }
