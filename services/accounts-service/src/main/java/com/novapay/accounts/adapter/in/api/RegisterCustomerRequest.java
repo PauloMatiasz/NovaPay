@@ -3,6 +3,7 @@ package com.novapay.accounts.adapter.in.api;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
+import org.hibernate.validator.constraints.br.CPF;
 
 public record RegisterCustomerRequest(
 
@@ -11,7 +12,7 @@ public record RegisterCustomerRequest(
   String fullName,
 
   @NotBlank
-  String cpf,
+  @CPF String cpf,
 
   @NotBlank
   @Email

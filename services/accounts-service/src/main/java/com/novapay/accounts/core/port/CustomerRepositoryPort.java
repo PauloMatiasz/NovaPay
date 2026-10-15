@@ -5,6 +5,7 @@ import com.novapay.accounts.core.model.customer.Cpf;
 import com.novapay.accounts.core.model.customer.Email;
 
 import java.util.Optional;
+import java.util.UUID;
 
 public interface CustomerRepositoryPort {
 
@@ -13,4 +14,6 @@ public interface CustomerRepositoryPort {
   boolean existsByCpf(Cpf cpf);
   Optional<Customer> findByEmail(Email email);
   boolean existsByEmail(Email email);
+
+  Optional<Customer> findById(UUID customerId);
 }
